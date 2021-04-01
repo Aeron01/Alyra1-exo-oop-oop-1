@@ -24,6 +24,22 @@ const canVote = (person) => {
   return person.age < majo ? false : true
 }
 
+
+const mostSkilledDev = (persona, personb) => {
+  if (persona.language.length === personb.language.length) {
+    return 'Draw'
+  } else if (persona.language.length > personb.language.length) {
+    return persona.firstName
+  } else {
+    return personb.firstName
+  }
+
+}
+
+
+
 console.log(canVote(alice))
 console.log(canVote(bob))
 console.log(canVote(charlie))
+
+console.log(mostSkilledDev(alice, bob))
