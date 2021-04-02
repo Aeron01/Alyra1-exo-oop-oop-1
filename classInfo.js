@@ -1,4 +1,4 @@
-let countryMaj = 18
+//let countryMaj = 18
 class Human {
   constructor(firstName, lastName, age, language) {
     this.firstName = firstName
@@ -18,7 +18,6 @@ class Human {
       console.log(`\t - ${elem}`)
     })
     console.log('\n')
-    //console.log(`is dev: ${person.isDev}`)
   }
 
   canVote() {
@@ -27,13 +26,13 @@ class Human {
   }
 
 
-  mostSkilledDev(human) {
-    if (this.language.length === human.language.length) {
+  mostSkilledDev(person) {
+    if (this.language.length === person.language.length) {
       return console.log('Draw')
-    } else if (this.language.length > human.language.length) {
+    } else if (this.language.length > person.language.length) {
       return console.log(this.firstName)
     } else {
-      return console.log(human.firstName)
+      return console.log(person.firstName)
     }
 
   }
